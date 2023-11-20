@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+/* ===================
+    Common CSS Start
+====================*/
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+h2{
+    text-transform: uppercase;
+}
+.clr{
+    clear: both;
+}
+.common_padding{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.common_heading .heading{
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+}
+.common_heading .heading h2{
+    color: #353535;
+    font-size: 24px;
+    font-weight: 500px;
+    font-family: 'Oswald', sans-serif;
+}
+.common_heading .heading img{
+    width: 60px;
+    position: absolute;
+}
+/* ===================
+    Common CSS End
+====================*/
+/* ===================
+    Header CSS Start
+====================*/
+#header{
+    height: 32px;
+    background-color: #0872b9;
+}
+.header_row{
+    width: 960px;
+}
+.header_row .col_left{
+    line-height: 32px;
+    width: 50%;
+    float: left;
+}
+.header_row .col_left p{
+    color: #e7e7e7;
+    font-size: 14px;
+    font-weight: 400px;
+    font-family: 'Open Sans', sans-serif;
+}
+.header_row .col_right{
+    line-height: 32px;
+    width: 50%;
+    float: left;
+}
+.header_row .col_right ul{
+    float: right;
+}
+.header_row .col_right ul li{
+    margin-left: 25px;
+    float: left;
+}
+.header_row .col_right ul li a{
+    color: #e7e7e7;
+    transition: .3s;
+}
+.header_row .col_right ul li a:hover{
+    color: #353535;
+}
+/* ===================
+    Header CSS End
+====================*/
+/* ===================
+    Nav Bar CSS Start
+====================*/
+#nav{
+    height: 80px;
+}
+.nav_row .col_left{
+    width: 30%;
+    float: left;
+    line-height: 80px;
+}
+.nav_row .col_left .logo_img{
+    height: 39px;
+    width: 80px;
+}
+.nav_row .col_right{
+    width: 70%;
+    float: left;
+    line-height: 80px;
+}
+.nav_row .col_right ul{
+    float: right;
+}
+.nav_row .col_right ul li{
+    float: left;
+    margin-left: 15px;
+}
+.nav_row .col_right ul li a{
+    color: #353535;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    transition: .3s;
+}
+.nav_row .col_right ul li a:hover{
+    color: #0872b9;
+}
+/* ===================
+    Nav Bar CSS End
+====================*/
+/* ===================
+    Banner CSS Start
+====================*/
+#banner{
+    height: 400px;
+    background-image: url(../images/Beatles.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  /* picture full background cover korar jonno */
+    background-position: center;  /* picture center position theke choranor jonno */
+    position: relative;
+    z-index: 1;
+}
+#banner .shadow{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.60);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.banner_text{
+    float: right;
+    text-align: right;
+    margin-top: 80px;
+}
+.banner_text h2{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+}
+.banner_text h1{
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 4px;
+}
+.banner_text p{
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    width: 440px;
+    margin-top: 12px;
+    line-height: 24px;
+}
+.banner_text .banner_button a{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500px;
+    font-family: 'Oswald', sans-serif;
+    height: 31px;
+    width: 84px;
+    border: 1px solid #ffffff;
+    text-align: center;
+    line-height: 31px;
+    margin-left: 20px;
+    transition: .3s;
+}
+.banner_text .banner_button a:hover{
+    background-color: #0872b9;
+    border: none;
+}
+.banner_button{
+    margin-top: 30px;
+}
+/* ===================
+    Banner CSS End
+====================*/
+/* ===================
+    About CSS Start
+====================*/
+#about{
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.about_row{
+    margin-top: 40px;
+}
+.about_row .left_col{
+    width: 40%;
+    float: left;
+}
+.about_row .left_col .about_img{
+    height: 264px;
+    width: 380px;
+}
+.about_row .right_col{
+    width: 60%;
+    float: left;
+}
+.about_row .right_col .about_text{
+    margin-left: 21px;
+}
+.about_row .right_col .about_text p{
+    color: #555555;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 45px;
+}
+.about_row .right_col .about_text p span{
+    display: block;
+    margin-top: 35px;
+}
+/* ===================
+    About CSS End
+====================*/
+/* ===================
+    Service CSS Start
+====================*/
+.service_row .service_logo img{
+    height: 39px;
+    width: 32px;
+}
+.service_row{
+    margin-top: 68px;
+}
+.service_row .service_col{
+    width: 31.94%;
+    text-align: center;
+    height: 166px;
+    background-color: #f1f1f1;
+    float: left;
+    padding: 50px 20px 20px 20px;
+    position: relative;
+    margin-right: 20px;
+    transition: .3s;
+}
+.service_row .service_col:nth-child(3){
+    margin-right: 0px;
+}
+.service_row .service_col:hover{
+    box-shadow: #0000004d 0px 0px 8px 0px;
+}
+.service_row h2{
+    color: #353535;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+}
+.service_row p{
+    color: #555555;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+}
+.service_col .img{
+    width: 35px;
+    line-height: 70px;
+    margin: 0 auto;
+}
+.service_col .service_logo{
+    height: 69px;
+    width: 69px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translatex(-50%);
+    border: 2px solid #ffffff;
+    transition: .3s;
+}
+.service_col:hover .service_logo{
+    background-color: #5bc5f4;
+}
+.service_col .service_logo::after{
+    content: '';
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    border: 2.5px solid #f1f1f1;
+    border-radius: 50%;
+    top: -5px;
+    left: -5px;
+    transition: .3s;
+}
+.service_col:hover .service_logo::after{
+    border-color: #5bc5f4;
+}
+.service_col .service_logo::before{
+    content: '';
+    height: 71px;
+    width: 71px;
+    position: absolute;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    top: -8px;
+    left: -8px;
+}
+/* ===================
+    Service CSS End
+====================*/
+/* ===================
+    Portfolio CSS Start
+====================*/
+.portfolio_row{
+    margin-top: 30px;
+}
+.portfolio_col{
+    width: 23.43%;
+    float: left;
+    margin-right: 20px;
+}
+
+.portfolio_col .item{
+    position: relative;
+}
+.portfolio_col .item:nth-child(1){
+    margin-bottom: 20px;
+}
+.portfolio_col:nth-child(4){
+    margin-right: 0px;
+}
+.portfolio_col .item .shadow{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.60);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: .3s;
+}
+.portfolio_col .item:hover .shadow{
+    transform: scale(1);
+}
+.portfolio_col .item .shadow a{
+    background-color: #5bc5f4;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+/* ===================
+    Portfolio CSS End
+====================*/
+/* ===================
+    Team CSS Start
+====================*/
+.team_row{
+    margin-top: 30px;
+}
+.team_col{
+    width: 23.43%;
+    margin-right: 20px;
+    float: left;
+}
+.team_col:nth-child(4){
+    margin-right: 0;
+}
+.team_col h3{
+    color: #353535;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .3s;
+}
+.team_col:hover h3{
+    color: #5bc5f4;
+}
+.team_col p{
+    color: #555555;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    line-height: 24px;
+}
+.team_col .team_img{
+    position: relative;
+    margin-bottom: 6px;
+    overflow: hidden;
+}
+.team_col .team_img:hover{
+    box-shadow: #0000004d 0px 0px 8px 0px;
+}
+.team_col .team_img .shadow{
+    height: 100%;
+    width: 80px;
+    background-color: rgba(0, 0, 0, 0.60);
+    position: absolute;
+    top: 0;
+    right: -80px;
+    transition: .3s;
+}
+.team_col:hover .shadow{
+    right: 0;
+
+}
+.team_col .team_img .shadow ul{
+    text-align: center;
+    margin-top: 35px;
+}
+.team_col .team_img .shadow a{
+    color: #ffffff;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+    transition: .3s;
+}
+.team_col .team_img .shadow a:hover{
+    background-color: #5bc5f4;
+    border-color: #5bc5f4;
+}
+/* ===================
+    Team CSS End
+====================*/
+/* ===================
+    Testimonial CSS Start
+====================*/
+#testimonial{
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.testimonial_row{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.testimonial_col{
+    width: 48.8%;
+    text-align: center;
+}
+.testimonial_col .testimonial_img{
+    width: 80px;
+    margin: 0 auto 36px;
+}
+.testimonial_col .testimonial_text{
+    background-color: #f1f1f1;
+    padding: 20px;
+    position: relative;
+}
+.testimonial_col .testimonial_text::after{
+    content: '';
+    height: 25.62px;
+    width: 25.62px;
+    background-color: #f1f1f1;
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    transform: translatex(-50%) rotate(45deg);
+    z-index: -1;
+}
+.testimonial_col .testimonial_text h3{
+    color: #353535;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.testimonial_col .testimonial_text ul{
+    display: flex;
+    justify-content: center;
+}
+.testimonial_col .testimonial_text ul li{
+    color: #5bc5f4;
+}
+.testimonial_col .testimonial_text h4{
+    color: #555555;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    line-height: 24px;
+}
+.testimonial_col .testimonial_text p{
+    color: #555555;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    line-height: 24px;
+    margin-top: 5px;
+}
+/* ===================
+    Testimonial CSS End
+====================*/
+/* ===================
+    Footer CSS Start
+====================*/
+#footer{
+    background-color: #353535;   
+}
+.footer_row{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_info{
+    width: 220px;
+}
+.footer_info .footer_logo{
+    width: 89px;
+    padding-bottom: 20px;
+}
+.footer_info p{
+    color: #f1f1f1;
+    font-size: 13px;
+    font-weight: 400px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    padding-top: 10px;
+}
+.footer_info p span{
+    display: block;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+.footer_contact{
+    width: 230px;
+}
+.footer_contact h3{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 12px;
+    padding-bottom: 20px;
+}
+.contact_item{
+    display: flex;
+    margin-top: 20px;
+}
+.contact_item .icon{
+    color: #ffffff;
+    height: 35px;
+    width: 35px;
+    background-color: #5bc5f4;
+    border-radius: 50%;
+    line-height: 35px;
+    text-align: center;
+    margin-right: 10px;
+}
+.contact_item ul li a{
+    color: #f1f1f1;
+    font-size: 13px;
+    font-weight: 400px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 20px;
+}
+.footer_link{
+    width: 150px;
+}
+.footer_link h3{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 12px;
+    padding-bottom: 20px;
+}
+.footer_link .menu{
+    display: flex;
+}
+.footer_link .menu ul{
+    margin-right: 15px;
+}
+.footer_link .menu ul li a{
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 36px;
+    transition: .3s;
+}
+.footer_link .menu ul li a:hover{
+    color: #5bc5f4;
+}
+.footer_photo{
+    width: 300px;
+}
+.footer_photo .photo{
+    display: flex;
+}
+.footer_photo h3{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 12px;
+    padding-bottom: 20px;
+}
+.footer_photo .photo_col{
+    margin-right: 15px;
+    width: 90px;
+}
+.footer_photo .photo_col .item:nth-child(1){
+    margin-bottom: 15px;
+}
+#footer .copy_right{
+    background-color: #555555;
+    height: 44px;
+    text-align: center;
+}
+#footer .copy_right p{
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 44px;
+}
+#footer .copy_right a{
+    color: #5bc5f4;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+}
+/* ===================
+    Footer CSS End
+====================*/
